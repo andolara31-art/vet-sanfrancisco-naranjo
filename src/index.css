@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --vet-green: #2E7D32;
+  --vet-green-dark: #1B5E20;
+  --vet-white: #FFFFFF;
+  --vet-gray: #F5F5F0;
+  --vet-blue: #1565C0;
+  --vet-beige: #FFF8E7;
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: 'DM Sans', system-ui, sans-serif;
+  color: #222222;
+  background: #FFFFFF;
+  margin: 0;
+  min-height: 100vh;
+  font-feature-settings: 'kern' 1, 'liga' 1;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', Georgia, serif;
+  letter-spacing: -0.02em;
+  color: #1B5E20;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center gap-2 bg-vet-green text-white font-semibold px-6 py-3 rounded-full transition-all duration-300 shadow-soft hover:bg-vet-green-dark hover:shadow-lift hover:-translate-y-0.5;
+}
+
+.btn-outline {
+  @apply inline-flex items-center justify-center gap-2 bg-white text-vet-green border-2 border-vet-green font-semibold px-6 py-3 rounded-full transition-all duration-300 hover:bg-vet-green hover:text-white;
+}
+
+.btn-whatsapp {
+  @apply inline-flex items-center justify-center gap-3 bg-[#25D366] text-white font-semibold px-8 py-4 rounded-full transition-all duration-300 shadow-lift hover:shadow-card hover:-translate-y-1 hover:bg-[#1DA851];
+}
+
+.container-wide {
+  @apply max-w-6xl mx-auto px-5 md:px-8;
+}
+
+.section {
+  @apply py-20 md:py-28;
+}
+
+.eyebrow {
+  @apply inline-block text-xs font-semibold tracking-[0.2em] uppercase text-vet-green mb-4 font-sans;
+}
+
+.card {
+  @apply bg-white rounded-card shadow-card transition-all duration-300;
+}
+
+.card-hover {
+  @apply hover:-translate-y-2 hover:shadow-lift;
+}
+
+::selection {
+  background: #2E7D32;
+  color: #fff;
+}
+
+/* subtle bg pattern for beige sections */
+.bg-paws {
+  background-color: #FFF8E7;
+  background-image:
+    radial-gradient(circle at 20% 30%, rgba(46,125,50,0.04) 0, transparent 4px),
+    radial-gradient(circle at 80% 70%, rgba(21,101,192,0.04) 0, transparent 4px);
+  background-size: 120px 120px;
+}
+
+.text-gradient-green {
+  background: linear-gradient(120deg, #2E7D32, #1565C0);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
