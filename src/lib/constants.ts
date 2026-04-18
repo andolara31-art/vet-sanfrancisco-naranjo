@@ -1,6 +1,6 @@
 export const CLINIC = {
-  name: 'Clínica Veterinaria San Francisco de Asís',
-  shortName: 'San Francisco de Asís',
+  name: 'Clínica Veterinaria Occivet',
+  shortName: 'Occivet',
   tagline: 'El bienestar animal del cantón de Naranjo',
   address: 'Sureste del Ministerio de Salud, Naranjo, Alajuela',
   addressShort: 'Naranjo, Alajuela',
@@ -14,7 +14,7 @@ export const CLINIC = {
     likes: 2944,
     checkins: 547,
   },
-  mapsUrl: 'https://www.google.com/maps/search/?api=1&query=Clinica+Veterinaria+San+Francisco+de+Asis+Naranjo+Alajuela',
+  mapsUrl: 'https://www.google.com/maps/search/?api=1&query=Clinica+Veterinaria+Occivet+Naranjo+Alajuela',
 }
 
 export const waLink = (msg = CLINIC.whatsappMessage) =>

@@ -16,8 +16,8 @@ export default function Contact() {
     const form = e.currentTarget
     const data = new FormData(form)
     data.append('access_key', '57188588-f5f6-4bac-9a8e-075d9af37752')
-    data.append('subject', 'Nueva consulta — Clínica Veterinaria San Francisco de Asís')
-    data.append('from_name', 'Web San Francisco de Asís')
+    data.append('subject', 'Nueva consulta — Clínica Veterinaria Occivet')
+    data.append('from_name', 'Web Occivet')
 
     try {
       const res = await fetch('https://api.web3forms.com/submit', {

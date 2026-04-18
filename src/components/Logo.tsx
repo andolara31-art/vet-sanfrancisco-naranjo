@@ -8,7 +8,7 @@ export default function Logo({ className = '' }: { className?: string }) {
       </div>
       <div className="leading-tight">
         <div className="font-display text-[17px] font-bold text-vet-green-dark tracking-tight">
-          San Francisco de Asís
+          Occivet
         </div>
         <div className="text-[11px] text-vet-text-soft font-medium tracking-wide">
           Clínica Veterinaria · Naranjo
